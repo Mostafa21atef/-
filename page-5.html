@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="car.png">
+    <meta charset="UTF-8">
+    <title>صفحة تحتوي على jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    body{
+        direction: rtl;
+    }
+</style>
+<body>
+    <header>
+        <h1>صفحة تحتوي على jQuery</h1>
+    </header>
+    
+    <section>
+        <h2>استخدام jQuery</h2>
+        <p>هذا هو مثال بسيط على استخدام jQuery لتغيير نص عنصر HTML عند النقر على زر.</p>
+        <button id="changeText">تغيير النص</button>
+        <p id="textToChange"></p>
+    </section>
+
+    <!-- تضمين الكود الخاص بـ jQuery -->
+    <script>
+        // انتظر حتى تتم تحميل الصفحة
+        $(document).ready(function() {
+            // اضبط العمل عند النقر على الزر
+            $("#changeText").click(function() {
+                // قم بتغيير نص العنصر بواسطة jQuery
+                $("#textToChange").text("تم تغيير النص بواسطة jQuery!");
+            });
+        });
+    </script>
+</body>
+</html>
